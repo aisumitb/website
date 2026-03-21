@@ -357,6 +357,82 @@ font-size:12px;
 .promo-slide.active{
     opacity:1;
 }
+        @media (max-width: 768px){
+
+    /* 1. Stack layout vertically */
+    .main-layout{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    /* 2. Remove sidebar left margin effect */
+    .profile-section{
+        margin-left: 0;
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    /* 3. Make profile vertical */
+    .profile-card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo{
+        width: 100px;
+        height: 100px;
+    }
+
+    /* 4. Sidebar becomes full width */
+    .services-ticker-vertical{
+        width: 100%;
+        height: auto;
+    }
+
+    /* 5. Calendar full width */
+    .calendar-left{
+        width: 100%;
+    }
+
+    .calendar-left iframe{
+        width: 100%;
+        height: 300px;
+    }
+
+    /* 6. Tools grid becomes single column */
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    /* 7. Header adjustment */
+    .header{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .header-right{
+        align-items: center;
+        text-align: center;
+    }
+
+    .ca-logo{
+        width: 120px;
+        height: 120px;
+    }
+
+    /* 8. Video scroll cleaner */
+    .video-row iframe{
+        width: 260px;
+        height: 150px;
+    }
+
+    /* 9. Footer stacking */
+    .footer-container{
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+}
     </style>
 </head>
 <body>
