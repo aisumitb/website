@@ -229,25 +229,7 @@ height:180px;
 border:none;
 border-radius:8px;
 flex-shrink:0;
-}  
-       .blog-slider{
-    width:500px;          /* control slide width */
-    height:280px;         /* adjust height proportionally */
-
-         /* center horizontally */
-    
-    border-radius:10px;
-    overflow:hidden;
-    background:#000;
-    box-shadow:0 6px 15px rgba(0,0,0,0.15);
-}
-
-.blog-slider iframe{
-    width:100%;
-    height:100%;
-    border:none;
-    pointer-events:none; /* disables controls */
-}
+}        
 .profile-section{
     width:1000px;
     padding: 20px 0;
@@ -375,82 +357,6 @@ font-size:12px;
 .promo-slide.active{
     opacity:1;
 }
-        @media (max-width: 768px){
-
-    /* 1. Stack layout vertically */
-    .main-layout{
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    /* 2. Remove sidebar left margin effect */
-    .profile-section{
-        margin-left: 0;
-        margin-right: 10px;
-        padding: 10px;
-    }
-
-    /* 3. Make profile vertical */
-    .profile-card{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-photo{
-        width: 100px;
-        height: 100px;
-    }
-
-    /* 4. Sidebar becomes full width */
-    .services-ticker-vertical{
-        width: 100%;
-        height: auto;
-    }
-
-    /* 5. Calendar full width */
-    .calendar-left{
-        width: 100%;
-    }
-
-    .calendar-left iframe{
-        width: 100%;
-        height: 300px;
-    }
-
-    /* 6. Tools grid becomes single column */
-    .container{
-        grid-template-columns: 1fr;
-    }
-
-    /* 7. Header adjustment */
-    .header{
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .header-right{
-        align-items: center;
-        text-align: center;
-    }
-
-    .ca-logo{
-        width: 120px;
-        height: 120px;
-    }
-
-    /* 8. Video scroll cleaner */
-    .video-row iframe{
-        width: 260px;
-        height: 150px;
-    }
-
-    /* 9. Footer stacking */
-    .footer-container{
-        flex-direction: column;
-        gap: 5px;
-        text-align: center;
-    }
-}
     </style>
 </head>
 <body>
@@ -483,7 +389,6 @@ font-size:12px;
                 </div>
                 </div>
                 </div>
-    
 <div class="profile-section">
     <div class="profile-card">
         <img src="https://lh3.googleusercontent.com/d/1BtQbOThrD1rRRWyKlhdqFyryiIdQyZzO" class="profile-photo">
@@ -564,11 +469,11 @@ font-size:12px;
             </div>
             </div>
 
-        
+        </div>
         <div class="calendar-left">
         <iframe src="https://calendar.google.com/calendar/embed?src=87004f704dba7f3a049d8a9b19e686914fe5c6d9b54689fafc4a118e8a038348%40group.calendar.google.com&ctz=Asia%2FKolkata&showTitle=0&showPrint=0&showTabs=0&showTz=0&showCalendars=0" style="border: 0" width="750" height="550" frameborder="0" scrolling="yes"></iframe>
-   
     
+    </div>
     </div>
     
 
@@ -635,20 +540,19 @@ font-size:12px;
     </div>
     </div>
     </div>
-        </div>
-       
-<div class="blog-slider">
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSzAOb0Rmv1iRzNllZIOP2_Kf-VRtlO_edZButCoxpmayAl2uC1Et5BUXZ1rs-3w4ZuqCPNt4tcPDdK/pubembed?start=true&loop=true&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-</div>
-    
-<div class="video-section">
+    <div class="video-section">
 <div class="video-row">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bGu9s3bRot0?si=gpvnjrNHw4PzoCN1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qA1eBjQr1sY?si=4jpsaVOTWo8CinrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tl8NwLX9OW8?si=VqXM6gFX9--zLlrZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lLkzpndj-D4?si=PXjEkAuPY3Uek8LB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
 </div>
 </div>
 
@@ -680,5 +584,14 @@ All content and outputs on this platform are indicative in nature. Before taking
 </div>
 
 </footer>
+   
+     
+
+        
+
+   
+
+    
+
 </body>
 </html>
