@@ -373,43 +373,55 @@ font-size:12px;
     border:none;
     pointer-events:none;
 }
-        .message-box{
-    width:100%;              /* same as calendar/sidebar */
-    margin-top:10px;
-    height:100px;
-    background:#ffffff;
-    padding:12px;
-    border-radius:8px;
-
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        .contact-form{
+    background:#f2f2f2;
+    padding:15px;
+    width:100%;
+    border-radius:6px;
 }
 
-.message-box h3{
-    font-size:14px;
-    color:#1e3a8a;
-    margin-bottom:6px;
+.contact-form h3{
+    background:#5bb043;   /* green header */
+    color:#fff;
+    padding:10px;
+    font-size:16px;
+    margin:-15px -15px 10px -15px;
 }
 
-.message-box p{
-    font-size:12px;
-    color:#555;
+.contact-form label{
+    display:block;
+    font-size:13px;
+    margin-bottom:4px;
+}
+
+.contact-form label span{
+    color:red;
+}
+
+/* TEXTAREA (MAIN CHANGE) */
+.contact-form textarea{
+    width:100%;
+    height:150px;   /* 🔥 increase this to match image */
+    border:1px solid #999;
     margin-bottom:10px;
 }
 
-.msg-btn{
-    display:block;
-    text-align:center;
-    padding:6px;
-    margin-bottom:6px;
-    border-radius:5px;
-    text-decoration:none;
-    font-size:12px;
-    font-weight:600;
+/* INPUTS */
+.contact-form input{
+    width:100%;
+    height:30px;
+    border:1px solid #999;
+    margin-bottom:10px;
 }
-        .email{
+
+/* BUTTON */
+.contact-form button{
     background:#1e3a8a;
     color:#fff;
-}
+    border:none;
+    padding:8px 15px;
+    cursor:pointer;
+}   
     </style>
 </head>
 <body>
@@ -527,14 +539,19 @@ font-size:12px;
         <iframe src="https://calendar.google.com/calendar/embed?src=87004f704dba7f3a049d8a9b19e686914fe5c6d9b54689fafc4a118e8a038348%40group.calendar.google.com&ctz=Asia%2FKolkata&showTitle=0&showPrint=0&showTabs=0&showTz=0&showCalendars=0" style="border: 0" width="750" height="550" frameborder="0" scrolling="yes"></iframe>
     
     </div>
-       <div class="message-box">
-    <h3>Message Me</h3>
+       <div class="contact-form">
+    <h3>Want to consult us?</h3>
 
-    <input type="text" id="name" placeholder="Your Name">
-    <input type="text" id="mobile" placeholder="Mobile Number">
-    <textarea id="message" placeholder="Type your message..."></textarea>
+    <label>Message <span>*</span></label>
+    <textarea placeholder=""></textarea>
 
-    <button onclick="sendMessage()">Send</button>
+    <label>Email ID <span>*</span></label>
+    <input type="email">
+
+    <label>Phone</label>
+    <input type="text">
+
+    <button>Submit</button>
 </div>
         </div>
     
