@@ -19,8 +19,7 @@
     padding: 0;
     display:flex;
     flex-direction:column;
-               
-    
+    min-height:100vh;
         }
 
        
@@ -152,7 +151,6 @@
     padding: 0; 
     gap: 30px; 
             margin-bottom:0;
-            min-height:auto;  
     
     align-items:flex-start; 
     flex:1;
@@ -160,7 +158,7 @@
 
 .services-ticker-vertical {
     width: 260px;          /* fixed sidebar width */
-         /* full height look */
+    min-height:100px;     /* full height look */
     background: #2f4a8a;   /* match header */
     color: #fff;
     padding: 20px 15px;
@@ -544,7 +542,21 @@ font-size:12px;
             </div>
 
         </div>
-       
+        <div class="calendar-left">
+        <iframe src="https://calendar.google.com/calendar/embed?src=87004f704dba7f3a049d8a9b19e686914fe5c6d9b54689fafc4a118e8a038348%40group.calendar.google.com&ctz=Asia%2FKolkata&showTitle=0&showPrint=0&showTabs=0&showTz=0&showCalendars=0" style="border: 0" width="750" height="550" frameborder="0" scrolling="yes"></iframe>
+    
+    </div>
+       <div class="contact-form">
+    <h3>Want to consult us?</h3>
+
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Email ID">
+    <input type="text" id="phone" placeholder="Phone">
+    <textarea id="message" placeholder="Message"></textarea>
+
+    <button onclick="submitForm()">Submit</button>
+</div>
+        </div>
     
 
         
@@ -610,21 +622,6 @@ font-size:12px;
     </div>
     </div>
     </div>
-        <div class="calendar-left">
-        <iframe src="https://calendar.google.com/calendar/embed?src=87004f704dba7f3a049d8a9b19e686914fe5c6d9b54689fafc4a118e8a038348%40group.calendar.google.com&ctz=Asia%2FKolkata&showTitle=0&showPrint=0&showTabs=0&showTz=0&showCalendars=0" style="border: 0" width="750" height="550" frameborder="0" scrolling="yes"></iframe>
-    
-    </div>
-       <div class="contact-form">
-    <h3>Want to consult us?</h3>
-
-    <input type="text" id="name" placeholder="Your Name">
-    <input type="email" id="email" placeholder="Email ID">
-    <input type="text" id="phone" placeholder="Phone">
-    <textarea id="message" placeholder="Message"></textarea>
-
-    <button onclick="submitForm()">Submit</button>
-</div>
-        </div>
     <div class="blog-slider">
     <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSzAOb0Rmv1iRzNllZIOP2_Kf-VRtlO_edZButCoxpmayAl2uC1Et5BUXZ1rs-3w4ZuqCPNt4tcPDdK/pubembed?start=true&loop=true&delayms=30000" frameborder="0" allowfullscreen="true"></iframe>
 </div>
