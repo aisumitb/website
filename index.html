@@ -379,6 +379,7 @@ font-size:12px;
     padding:15px;
     width:100%;
     border-radius:6px;
+            top-margin:10px;
 }
 
 .contact-form h3{
@@ -545,16 +546,12 @@ font-size:12px;
        <div class="contact-form">
     <h3>Want to consult us?</h3>
 
-    <label>Message <span>*</span></label>
-    <textarea placeholder=""></textarea>
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Email ID">
+    <input type="text" id="phone" placeholder="Phone">
+    <textarea id="message" placeholder="Message"></textarea>
 
-    <label>Email ID <span>*</span></label>
-    <input type="email">
-
-    <label>Phone</label>
-    <input type="text">
-
-    <button>Submit</button>
+    <button onclick="submitForm()">Submit</button>
 </div>
         </div>
     
