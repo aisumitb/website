@@ -440,11 +440,8 @@ font-size:12px;
             <p></p>
         </div>
         <div class="news-ticker">
-    <div class="news-track">
-        Latest Updates: 
-        MCA Announces CCFS Scheme, 2026 | 
-        New Income Tax Act 2025 to take effect from 1st April 2026
-        
+    <div class="news-track" id="newsTrack">
+        Loading updates...
     </div>
 </div>
 
@@ -674,6 +671,24 @@ function submitForm(){
         alert("Error sending message");
     });
 }
+</script>
+    <script>
+fetch("https://script.google.com/macros/s/AKfycbz3Mk_wiNKVrkrNsoAj2ItrM3kWpwReJ7WGd6MRqkeFynFOtWUYldsPM23GE6vUlV-x/exec")
+.then(res => res.json())
+.then(data => {
+
+    let newsText = "Latest Updates: ";
+
+    data.forEach(item => {
+        newsText += item + " | ";
+    });
+
+    document.getElementById("newsTrack").innerText = newsText;
+
+})
+.catch(err => {
+    document.getElementById("newsTrack").innerText = "Unable to load updates";
+});
 </script>
 
      <footer class="footer-note">
