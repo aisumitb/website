@@ -38,24 +38,26 @@
         
 
       .card {
-    background:
-        linear-gradient(rgba(255,255,255,0.88),
-                        rgba(255,255,255,0.88)),
-        url('image.png');
+   position: relative;
+  min-height: 180px;
+  padding: 22px;
+  border-radius: 14px;
+  overflow: hidden;
 
-    background-repeat: repeat;
-    background-size: auto, 300px 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    border: 1px solid #075B38;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
-    color: #075B38;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
         }
 
         .card h3 {
